@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+
+
+    <meta charset="UTF-8">
+    <title>SweepRobot - robot usisivač</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content>
+
+    <!-- libs -->
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.countdown.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/jquery.transform2d.js"></script> -->
+    <!-- <link rel="stylesheet" href="css/normalize.min.css" type="text/css" media="all"> -->
+    <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/skeleton.min.css" type="text/css" media="all">
+    <script src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="js/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <!-- <link rel="stylesheet" href="css/stylesheet.css" type="text/css" media="all"> -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css" media="all">
+    <!-- <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script> -->
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
+    <!-- /myfile -->
+    <script>
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        ym(73475881, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper animated fadeIn">
+
+        <section id="header" class="row col-xs-12 center-xs">
+            <div class="content row center-xs no-margin-padding">
+                <div class="watch row col-md-5 col-xs-12 end-md center-xs bottom-xs">
+                    <img src="img/header-bot.png" class="float">
+                    <img src="img/shadow.png" class="shadow">
+                </div>
+                <div class="logo-column row col-md-7 col-xs-12 center-xs middle-xs">
+                    <div class="logo row col-xs-12 center-xs top-xs">
+                        <img src="img/logo.png" alt>
+                        <div class="subtitle row col-xs-12 center-xs top-xs">
+                            <div> ROBOT <span> USISIVAČ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price row col-xs-12 center-xs middle-xs">
+
+                        <span class="old"> 1358 HRK</span>
+                        <span class="new pulse"> 679 HRK</span>
+                        <span class="discount">
+                            <img src="img/discount.png">
+                        </span>
+                    </div>
+                    <div class="specs row col-xs-12 center-xs middle-xs">
+                        <div class="spec row col-xs-12 start-xs middle-xs">
+                            <div class="content row col-xs-12 start-xs middle-xs no-margin-padding">
+                                <img src="img/icon.png">
+                                <div class="text">
+                                    <span> POBOLJŠATI ČISTOĆU</span> VAŠEG DOMA
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spec row col-xs-12 start-xs middle-xs">
+                            <div class="content row col-xs-12 start-xs middle-xs no-margin-padding">
+                                <img src="img/icon.png">
+                                <div class="text"> 3 U 1 DIZAJN:<span> PUŠIONA I ČISTI</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spec row col-xs-12 start-xs middle-xs">
+                            <div class="content row col-xs-12 start-xs middle-xs no-margin-padding">
+                                <img src="img/icon.png">
+                                <div class="text"> MOĆAN i<span> TIHI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="text-image-banner-1" class="lightBlueTexture">
+            <div class="darkOverlayShadow content row col-xs-12 center-xs middle-xs no-margin">
+                <div class="image">
+                    <img src="img/sto.png">
+                </div>
+                <div class="text">
+                    <div class="title"> ZABORAVITE NA STARI USISIVAČ!</div>
+                    <b><span class="italic"> SweepRobot</span></b> je inovativni mali, praktičan, tihi robotski usisivač
+                    koji samostalno čisti podove vašeg doma.<br>
+                    <span class> Odmah ćete se riješiti starog ručnog usisavača</span>
+                </div>
+                <div class="lower row col-xs-12 center-xs middle-xs">
+                    <div class="countdown_button row col-xs-12 center-xs middle-xs">
+                        <div class="content row col-xs-12 center-xs middle-xs">
+                            <div class="countdown row col-sm-6 col-xs-12 center-xs middle-xs">
+                                <div id="time" class="time">
+                                    <div class="timer__tx center"> DO KRAJA AKCIJE OSTAO JE:</div>
+                                    <ul>
+                                        <li> 0<div class="podp"> SATI</div>
+                                        </li>
+                                        <li> 37<div class="podp"> MINUTA</div>
+                                        </li>
+                                        <li> 11<div class="podp"> SEKUNDI</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="btn row col-sm-6 col-xs-12 center-xs middle-xs">
+                                <a href="#order_frame" class="scroll_to_order" title="ORDINA ORA">
+                                    <div class="mybutton_round_2"> NARUČITE SADA</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="big-g" class="lateralImageGray">
+            <div class="content row col-xs-12 center-xs">
+                <div class="uppert-title row col-xs-12 center-xs">
+                    <h5> NAŠ NAJPRODAVANIJI PROIZVOD</h5>
+                </div>
+                <div class="main-title row col-xs-12 center-xs">
+                    <h2> DIZAJNIRAN DO NAJSITNIJIH DETALJA</h2>
+                </div>
+                <div class="feature feature-s2 row col-xs-12 center-xs middle-xs">
+                    <div class="left-text col-md-4 col-sm-6 end-md center-xs">
+                        <div class="feature-item feature-item-a">
+                            <h2 class="row end-md center-xs middle-xs">
+                                <i class="icon icon-ok-circled"></i> ROTIRAJUĆI<br> ČETKE
+                            </h2>
+                            <p> Opremljen s rotirajućim četkama u obliku slova V<b> bilo koju površinu</b>.</p>
+                        </div>
+                        <div class="feature-item feature-item-b">
+                            <h2 class="row end-md center-xs middle-xs">
+                                <i class="icon icon-ok-circled"></i> SNAŽAN<br> SUPER
+                            </h2>
+                            <p> Tajna leži u<b> snažan usisivač,</b> koji isisava sve smeće koje sretne na putu.</p>
+                        </div>
+                    </div>
+                    <div class="center-text col-md-4 col-xs-12">
+                        <div class="big-g-carousel feature-img">
+                            <div class="carousel-cell">
+                                <img class src="img/front.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-text col-md-4 col-sm-6 start-md center-xs">
+                        <div class="feature-item feature-item-e">
+                            <h2 class="row start-md center-xs middle-xs">
+                                <i class="icon icon-ok-circled"></i> PUNJIVA<br> BATERIJA
+                            </h2>
+                            <p> Uređaj se puni<b> USB kabel</b> koji je kompatibilan sa svim uređajima. Opremljen<b>
+                                    baterija s dugim vijekom trajanja</b>.</p>
+                        </div>
+                        <div class="feature-item feature-item-e">
+                            <h2 class="row start-md center-xs middle-xs">
+                                <i class="icon icon-ok-circled"></i> ZBIJEN<br> DIZAJN
+                            </h2>
+                            <p> SweepRobot ima super ravni dizajn koji vam omogućuje čišćenje smeća ispod<b> namještaj i
+                                    sofe</b> : cca. 26x6 cm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slider" class="slider_1">
+            <div class="content row col-xs-12 no-margin no-padding">
+                <div class="images col-md-6 col-xs-12 center-xs">
+                    <div class="slider-carousel-1">
+                        <div class="carousel-cell">
+                            <img src="img/DESIGN.jpg" alt>
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="img/under.jpg" alt>
+                        </div>
+                    </div>
+                </div>
+                <div class="text lightBlueTexture row col-md-6 col-xs-12 center-xs middle-xs no-margin no-padding">
+                    <div class="title start-xs">
+                        <div class="innerTitle"> ZAR NEMAŠ VREMENA DA POČISTIŠ?</div>
+                        <p><strong><span class="italic"> SweepRobot</span> je automatski robot koji čisti dok radite
+                                svoju stvar. Prestani gubiti vrijeme usisavanja!</strong></p>
+                        <p> Automatski se kreće u svemiru dok usisava i čisti;<strong> izbjegava
+                                prepreke</strong>,<strong> prolazi pod namještajem</strong> zahvaljujući finom obliku.
+                            Napunjen pomoću konvencionalnog USB kabela.</p>
+                        <p><strong> SUPER TIHO</strong> zahvaljujući sustavu Stop Noise i<strong> SUPER</strong>
+                            SNAŽAN<strong> usisavanje.</strong>
+                        </p>
+                        <br>
+                        <br>
+                        <div class="cornerButton"><i class="icon icon-play"></i><a href="#order_frame"
+                                class="scroll_to_order"> KUPITI SADA</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="box-banner" class>
+            <div class="content column-1200">
+                <div class="innerTitle"> PROIZVOD VISOKIH PERFORMANSI</div>
+                <div class="subtitle"> Glavne značajke<span class="italic"> SweepRobot</span>
+                </div>
+                <ul class="box-banner-carousel">
+                    <li class="carousel-cell">
+                        <div class="content row col-xs-12 center-xs">
+                            <div class="image">
+                                <img src="img/1.jpg">
+                            </div>
+                            <div class="description row center-xs">
+                                <div class="title row col-xs-12 middle-xs center-xs">
+                                    <span> 1</span> TEHNOLOŠKI
+                                </div>
+                                <div class="text"> Automatski se pomiče kada usisava i čisti; izbjegava prepreke,
+                                    prolazi pod namještajem zahvaljujući finom obliku i napuni se iz konvencionalnog USB
+                                    kabela.</div>
+                                <div class="cornerButton"><i class="icon icon-play"></i><a href="#order_frame"
+                                        class="scroll_to_order"> KUPITI SADA</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-cell is-selected">
+                        <div class="content row col-xs-12 center-xs">
+                            <div class="image">
+                                <img src="img/2.jpg">
+                            </div>
+                            <div class="description row center-xs">
+                                <div class="title row col-xs-12 middle-xs center-xs">
+                                    <span> 2</span> SNAŽAN
+                                </div>
+                                <div class="text"> Usisavač je ugrađen u robotsko tijelo. Tako je moćna da može usisati
+                                    gotovo sve smeće i prljavštinu.</div>
+                                <div class="cornerButton"><i class="icon icon-play"></i><a href="#order_frame"
+                                        class="scroll_to_order"> KUPITI SADA</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-cell">
+                        <div class="content row col-xs-12 center-xs">
+                            <div class="image">
+                                <img src="img/3.jpg">
+                            </div>
+                            <div class="description row center-xs   ">
+                                <div class="title row col-xs-12 middle-xs center-xs">
+                                    <span> 3</span> PAMETAN
+                                </div>
+                                <div class="text">
+                                    <span class="italic"> SweepRobot</span> ima mehanizam kretanja koji mu omogućuje da
+                                    prođe kroz prepreke na koje nailazi bez blokiranja.
+                                </div>
+                                <div class="cornerButton"><i class="icon icon-play"></i><a href="#order_frame"
+                                        class="scroll_to_order"> KUPITI SADA</a></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="text-image-banner-2" class="lightBlueTexture">
+            <div class="content row col-xs-12 center-xs middle-xs no-margin">
+                <div class="text"> Mala, ali moćna! Bit ćete zaprepašteni usisnom snagom <span class="italic">
+                        SweepRobot</span> . <br>
+                </div>
+                <div class="image">
+                    <img src="img/sunction.png">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="video" class="grayMesh_light">
+            <div class="container">
+                <iframe id="i_video" src="https://www.youtube.com/embed/kxRSdP_fAKY" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="slider" class="slider_2">
+            <div class="content row col-xs-12 no-margin no-padding">
+                <div class="images col-md-8 col-sm-7 col-xs-12 center-xs">
+                    <div class="slider-carousel-1">
+                        <div class="carousel-cell">
+                            <img src="img/accessori.jpg" alt>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="text lightBlueTexture row col-md-4 col-sm-5 col-xs-12 center-xs middle-xs no-margin no-padding">
+                    <div class="title start-xs">
+                        <div class="innerTitle"> SERIRANJE </div> Komplet se sastoji od svega što vam je potrebno: <br>
+                        <br>
+                        <ul>
+                            <li> USB kabel za punjenje.</li>
+                            <li> Rotirajuće četke.</li>
+                            <li> Tkanina za brisanje.</li>
+                            <li> Čičak za tkaninu.</li>
+                            <li> Sakupljač prašine</li>
+                        </ul>
+                        <br>
+                        <br>
+                        <div class="cornerButton"><i class="icon icon-play"></i><a href="#order_frame"
+                                class="scroll_to_order"> KUPITI SADA</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="opinions_secureShopping_wrapper" class="grayMesh_light">
+            <div id="opinions" class>
+                <div class="container">
+                    <h2 class="title row col-xs-12 center-xs"> Recenzije naših kupaca <i
+                            class="icon icon-facebook-squared"></i></h2>
+                    <p class="subtitle row col-xs-12 center-xs"> Rezultati naših kupaca govore sami za sebe.</p>
+                    <div class>
+                        <div class="opinions-carousel feature-img">
+                            <div class="carousel-cell">
+                                <div class="facebook-box">
+                                    <div class="content">
+                                        <div class="right-icon">
+                                            <i class="icon icon-down-open"></i>
+                                        </div>
+                                        <div class="row header">
+                                            <div class="avatar">
+                                                <img src="img/people_3.jpg" alt="Jennifer Tommasi">
+                                            </div>
+                                            <div class="name">
+                                                <h5><a> Sara</a></h5>
+                                                <span class="sub"> prije 10 sati</span>
+                                            </div>
+                                        </div>
+                                        <div class="row text"> Sjajan robot! Isporučeno brzo, izgleda nevjerojatno.
+                                            Komplet ima sve potrebne dodatke tako da je čišćenje brzo i praktično.
+                                        </div>
+                                        <hr>
+                                        <div class="rating row col-xs-12">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star-half-alt"></i>
+                                            <i class="icon icon-star-empty"></i>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <a> 14 osoba</a> sviđa mi se.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="facebook-box">
+                                    <div class="content">
+                                        <div class="right-icon">
+                                            <i class="icon icon-down-open"></i>
+                                        </div>
+                                        <div class="row header">
+                                            <div class="avatar">
+                                                <img src="img/people_4.jpg" alt="Francesca dell'Olmo">
+                                            </div>
+                                            <div class="name">
+                                                <h5><a> Jadranka</a></h5>
+                                                <span class="sub"> prije 5 sati</span>
+                                            </div>
+                                        </div>
+                                        <div class="row text"> Izvrsna kupnja. dobre kvalitete i cijene. Vrlo
+                                            jednostavan za korištenje, samo trebate umetnuti četke i spojiti se na
+                                            napajanje. Sada samo to i upotrijebite ga! </div>
+                                        <hr>
+                                        <div class="rating row col-xs-12">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star-empty"></i>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <a> 23 osobe</a> sviđa mi se.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="facebook-box">
+                                    <div class="content">
+                                        <div class="right-icon">
+                                            <i class="icon icon-down-open"></i>
+                                        </div>
+                                        <div class="row header">
+                                            <div class="avatar">
+                                                <img src="img/people_2.jpg" alt="Giacomo Partisani">
+                                            </div>
+                                            <div class="name">
+                                                <h5><a href target="_blank"> Robert</a></h5>
+                                                <span class="sub"> prije 4 sata</span>
+                                            </div>
+                                        </div>
+                                        <div class="row text"> Roba se isporučuje brzo i dobro pakirana. Nakon 8 sati
+                                            punjenja, odmah sam ga počeo koristiti za čišćenje cijele kuće, svih soba i
+                                            kupaonice. S robotom sam skratio vrijeme čišćenja na pola dok je radio,
+                                            radio sam svoju stvar. Unutar paketa nalazi se sve što vam je potrebno za
+                                            čišćenje. Sjajna kupovina! </div>
+                                        <hr>
+                                        <div class="rating row col-xs-12">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <a href> 11 osoba</a> sviđa mi se.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="facebook-box">
+                                    <div class="content">
+                                        <div class="right-icon">
+                                            <i class="icon icon-down-open"></i>
+                                        </div>
+                                        <div class="row header">
+                                            <div class="avatar">
+                                                <img src="img/people_1.jpg" alt="Marta Colombari">
+                                            </div>
+                                            <div class="name">
+                                                <h5><a> Ivka</a></h5>
+                                                <span class="sub"> prije 12 sati</span>
+                                            </div>
+                                        </div>
+                                        <div class="row text"> Već sam imao robota, ali za moju dvokatnu kuću odlučio
+                                            sam uzeti još jednu kako bi prvi kat uvijek bio čist. Baterija traje znatno
+                                            duže od vremena koje je potrebno za čišćenje kuće (oko 50 m²). Robot je vrlo
+                                            tih i dobro se čisti zahvaljujući rotirajućoj četkici koja dobro uklanja
+                                            prašinu s poda i tepiha. Odlična cijena za tu kvalitetu. </div>
+                                        <hr>
+                                        <div class="rating row col-xs-12">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <a> 11 osoba</a> sviđa mi se.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="facebook-box">
+                                    <div class="content">
+                                        <div class="right-icon">
+                                            <i class="icon icon-down-open"></i>
+                                        </div>
+                                        <div class="row header">
+                                            <div class="avatar">
+                                                <img src="img/people_5.jpg" alt="Riccardo Morra">
+                                            </div>
+                                            <div class="name">
+                                                <h5><a> Zvonimir</a></h5>
+                                                <span class="sub"> prije 1 sat</span>
+                                            </div>
+                                        </div>
+                                        <div class="row text"> Pokušao sam robota po prvi put, bio je neodlučan prije
+                                            nego što mi je dao naviku korištenja redovitog usisavača. Moram reći da je
+                                            rezultat odličan. Vrlo dobro uklanja prašinu i ostatke s bilo koje površine
+                                            od poda do tepiha i kreće se, izvrsno manevriranje. Jako mi je drago. </div>
+                                        <hr>
+                                        <div class="rating row col-xs-12">
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                            <i class="icon icon-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <a href> 18 osoba</a> sviđa mi se.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="order">
+            <div id="countdown">
+                <div class="container">
+                    <div class="content">
+                        <div class="countdown">
+                            <div id="time" class="time">
+                                <div class="timer__tx center"> DO KRAJA AKCIJE OSTAO JE:</div>
+                                <ul>
+                                    <li> 0<div class="podp"> SATI</div>
+                                    </li>
+                                    <li> 0<div class="podp"> MINUTA</div>
+                                    </li>
+                                    <li> 0<div class="podp"> SEKUNDI</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text"> Posebna ponuda vrijedi samo do <br> preostale jedinice robe. Imati vremena
+                            <br> kako bi na popust. <br> Plaćanje kurirskoj službi po primitku<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div id="order_frame" class="center">
+
+                    <form method="post" action>
+                        <div class="form-container" style="max-width: 500px;">
+                            <center>
+                                <h3 class="title"> ISPUNITE OBRAZAC</h3>
+                            </center>
+
+                            <div class="form-group">
+                                <label> Na primjer: Lana Barić</label>
+                                <input type="text" name="name" class="form-control" placeholder="Ime i prezime"
+                                    required="required">
+                            </div>
+
+                            <div class="form-group">
+                                <label> Na primjer: +385-49-123-456</label>
+                                <input type="tel" name="phone" class="form-control" placeholder="Telefon"
+                                    required="required">
+                            </div>
+                            <center>
+                                <button id="submit-button" class="btn btn-lg btn-warning new-sbm-btn" type="submit">
+                                    Dovršite kupnju</button>
+                            </center>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="secureShopping" class="grayMesh_light">
+            <div class="container row col-xs-12 center-xs">
+                <div class="content">
+                    <h1 class="title"> Kupnja 100% bez rizika</h1>
+                    <p class="subtitle"> Kupite originalni proizvod na našoj web stranici kako biste izbjegli
+                        krivotvorine.</p>
+                    <div class="list">
+                        <ul>
+                            <li class="row col-xs-12 middle-xs start-md center-xs">
+                                <img src="img/lock.svg" alt>
+                                <div class="opt-con">
+                                    <h4> 100% sigurna kupnja</h4>
+                                </div>
+                            </li>
+                            <li class="row col-xs-12 middle-xs start-md center-xs">
+                                <img src="img/delivery.svg" alt>
+                                <div class="opt-con">
+                                    <h4>dostava unutar 1&#8209;3 radnih dana</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer" class="no-margin">
+            <div class="container">
+                <div class="description">
+                    <span> PETREARTE PLC, 73B Lake Valley Rd, office A, Singapore 248373</span>
+                    <span><a href="policy_hr.html" target="_blank"> Pravila o privatnosti</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /wrapper -->
+
+    <!-- callback -->
+    <div class="callback-btn">
+        <img src="img/i-phone.png" alt="">
+    </div>
+    <div class="callback-form hide">
+        <form class="form lead_form" action="" style="padding: 20px 0;" method="post">
+            <label for="form_name1" style="padding: 0 0 0 10px; color: #fff">Na primjer: Lana Barić</label>
+            <input id="form_name1" class="name" type="text" name="name" placeholder="Ime i prezime" required
+                style="margin-bottom: 20px;">
+            <label for="form_phone1" style="padding: 0 0 0 10px; color: #fff">Na primjer: +385-49-123-456</label>
+            <input id="form_phone1" class="phone" type="tel" name="phone" placeholder="Telefon" required>
+            <button class="orange-btn primary_btn" type="submit">
+                Dovršite kupnju
+            </button>
+        </form>
+        <img src="img/i-cross.svg" alt="Close">
+    </div>
+
+    <!-- callback -->
+    <style>
+        .callback-btn {
+            z-index: 1000;
+            position: fixed;
+            right: -8px;
+            top: 130px;
+            width: 75px;
+            height: 63px;
+            background: #ffc107;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border-right: none;
+            padding-top: 10px;
+            padding-left: 10px;
+            transition: right 100ms;
+            cursor: pointer;
+        }
+
+        .callback-btn img {
+            width: 65%;
+        }
+
+        .callback-form {
+            max-width: 350px;
+            width: 100%;
+            z-index: 1001;
+            position: fixed;
+            right: 0;
+            top: 50px;
+            background: #868686;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            padding-top: 15px;
+            transition: right 500ms ease-in-out;
+        }
+
+        .callback-form.hide {
+            right: -1000px;
+        }
+
+        .callback-form form {
+            width: 90%;
+            margin: auto;
+            color: #131b32;
+            padding-bottom: 20px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: none;
+            background-color: transparent;
+        }
+
+        .callback-form form h5 {
+            float: left;
+            margin: 10px auto 1px;
+            margin-left: 0;
+            font-family: "Arial", sans-serif;
+            color: white;
+        }
+
+        .callback-form form input {
+            width: 100%;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 4px;
+            height: 40px;
+            color: #131b32;
+            text-align: left;
+            font-size: 20px;
+            padding-left: 10px;
+            background-color: #fff;
+            border: 1px solid #000;
+
+        }
+
+
+        .callback-form .orange-btn {
+            padding: 10px 5%;
+            width: 85%;
+            background: #ffc107;
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: unset;
+            border: none;
+            cursor: pointer;
+            color: #212529;
+            height: unset;
+        }
+
+        .callback-form img[src="img/i-cross.svg"] {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            cursor: pointer;
+            width: 20px;
+        }
+    </style>
+    <script>
+        $(".callback-btn").click(function () {
+            $(".callback-form").toggleClass("hide");
+        });
+
+        $(".show-callback").click(function () {
+            $(".callback-form").removeClass("hide");
+        });
+
+        $(document).click(function (e) {
+            if (
+                $(e.target).closest($(".callback-form, .callback-btn, .show-callback"))
+                    .length > 0
+            ) {
+                return;
+            }
+            $(".callback-form").addClass("hide");
+        });
+
+        $('img[src="img/i-cross.svg"]').click(function () {
+            $(".callback-form").addClass("hide");
+        });
+    </script>
+</body>
+
+</html>

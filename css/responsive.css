@@ -1,0 +1,396 @@
+/*--------------------------------------------------------*\
+    general
+\*--------------------------------------------------------*/
+
+@media screen and (min-width: 1600px) {
+    .wrapper {
+        max-width: 1400px;
+        margin: auto;
+    }
+}
+
+
+/*--------------------------------------------------------*\
+    header
+\*--------------------------------------------------------*/
+
+@media only screen and (max-width: 64em) {/* md */
+    #header .watch {
+        order: 2;
+    }
+
+    #header .watch img {
+        max-width: 650px;
+        width: 100%;
+    }
+
+    #header .logo .subtitle {
+        margin-top: 0;
+    }
+
+    #header .logo-column {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #header {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    #header .logo .specs {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #header .logo .specs {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+    #header .logo .specs .text::before,
+    #header .logo .specs .text::after {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #header .image img {
+        padding: 0;
+    }
+
+    #header .logo .specs {
+        font-size: 20px;
+    }
+
+    #header .logo .specs .text::before,
+    #header .logo .specs .text::after {
+        content: none;
+    }
+
+    #header .price .quantity {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #header .logo .subtitle {
+        font-size: 19px;
+    }
+
+    #header .logo .specs {
+        max-width: 190px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #header .price .quantity {
+        font-size: 20px;
+    }
+}
+
+
+/*--------------------------------------------------------*\
+    video
+\*--------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+    #video .container {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/*--------------------------------------------------------*\
+    big-g
+\*--------------------------------------------------------*/
+
+@media only screen and (max-width: 64em) {/* md */
+    #big-g .feature .center-text {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    #big-g .main-title {
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 48em) {/* sm */
+    #big-g .main-title {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #big-g .feature-s2 .feature-item,
+    #big-g .feature-s2 .feature-item:first-child {
+        margin-top: 60px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #big-g .feature p {
+        margin-bottom: 0;
+    }
+
+    #big-g .feature-s2 .feature-img img {
+        margin-top: 30px;
+    }
+}
+
+
+/*--------------------------------------------------------*\
+    box-banner
+\*--------------------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {/* md */
+    #box-banner {
+        padding-bottom: 30px;
+        padding-top: 80px;
+    }
+
+    #box-banner .innerTitle {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    #box-banner .subtitle {
+        max-width: 500px;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    #box-banner .innerTitle,
+    #box-banner .subtitle {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #box-banner li .description .text {
+        min-height: 0;
+        margin-bottom: 20px;
+    }
+
+    #box-banner ul li {
+        width: 100%;
+    }
+
+    #box-banner ul li .content {
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #box-banner {
+        padding-bottom: 20px;
+        padding-top: 45px;
+    }
+}
+
+
+/*--------------------------------------------------------*\
+    text-image-banner-1
+\*--------------------------------------------------------*/
+
+@media only screen and (max-width: 1300px) {
+    #text-image-banner-1 .text {
+        padding: 20px 30px 50px 30px;
+    }
+
+    #text-image-banner-1 .text .title {
+        font-size: 46px;
+    }
+}
+
+@media only screen and (max-width: 1169px) {
+    #text-image-banner-1 .text .title {
+        text-align: center;
+    }
+
+    #text-image-banner-1 .image {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #text-image-banner-1 .text,
+    #text-image-banner-1 .image {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #text-image-banner-1 .text {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    #text-image-banner-1 .text .title {
+        word-break: break-all;
+    }
+}
+
+
+/*--------------------------------------------------------*\
+    text-image-banner-2
+\*--------------------------------------------------------*/
+
+@media only screen and (max-width: 1050px) {
+    #text-image-banner-2 .text,
+    #text-image-banner-2 .image {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 64em) {/* md */
+    #text-image-banner-2 .content {
+        max-width: 700px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #text-image-banner-2 .text {
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+
+/*--------------------------------------------------------*\
+    text-image-banner-3
+\*--------------------------------------------------------*/
+
+@media only screen and (max-width: 700px) {
+    #text-image-banner-3 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #text-image-banner-3 .container {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #text-image-banner-3 .text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #text-image-banner-3 .text {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #text-image-banner-3 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #text-image-banner-3 .innerTitle {
+        font-size: 31px;
+    }
+}
+
+
+/*--------------------------------------------------------*\
+    opinions
+\*--------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+    #opinions .carousel-cell {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #opinions {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+
+/*--------------------------------------------------------*\
+    secureShopping
+\*--------------------------------------------------------*/
+
+@media only screen and (max-width: 64em) {/* sm */
+    #secureShopping .opt-con {
+        width: 100%;
+    }
+
+    #secureShopping ul li img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+/*--------------------------------------------------------*\
+    order
+\*--------------------------------------------------------*/
+
+@media only screen and (max-width: 550px) {
+    #countdown .container .content .countdown {
+        margin: 0 0 50px 0;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    #order > .container {
+        padding: 50px 0 0 0;
+    }
+
+    #countdown .container .content .text {
+        border-left: none;
+        text-align: center;
+    }
+}
+
+
+/*--------------------------------------------------------*\
+    slider
+\*--------------------------------------------------------*/
+
+@media only screen and (max-width: 1280px) {
+    #slider .text .title {
+        font-size: 19px;
+        line-height: 31px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 64em) {/* md */
+    #slider .text .title {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 20px;
+        line-height: 33px;
+    }
+}
+
+
+@media only screen and (max-width: 48em) {/* sm */
+    #slider.slider_2 .images {
+        order: 2;
+    }
+}
